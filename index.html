@@ -1,1 +1,459 @@
-Hello World
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- Local CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/styles.css" />
+
+    <!-- Latest compiled and minified JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://momentjs.com/downloads/moment-with-locales.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <!-- Local JS -->
+    <script src="./assets/js/main.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+
+            <header
+                class="col-12 col-lg-2 col-md-3 navbar shadow-lg navbar-expand-sm navbar-dark bg-dark-blue o-85 d-sm-flex flex-md-column scroll auto-height">
+                <div class="navbar-brand btn-group p-0 m-0 border-0 d-md-flex flex-md-column" role="group">
+                    <img class="d-none d-md-inline-block img-profile rounded-circle mx-auto my-5 w-55"
+                        src="./assets/images/profile.png" alt="MyPhoto">
+                    <button class="btn btn-outline-light border-0 dropdown-toggle" id="btnGroupDrop" type="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-user-tie"></i> About
+                    </button>
+
+                    <div class="dropdown-menu bg-light-blue border-0" aria-labelledby="btnGroupDrop">
+                        <button class="btn btn-outline-light d-block w-100 border-0 text-left">
+                            <i class="far fa-user"></i> Myself
+                        </button>
+                        <button class="btn btn-outline-light d-block w-100 border-0 text-left">
+                            <i class="fas fa-dumbbell"></i> Experience
+                        </button>
+                        <button class="btn btn-outline-light d-block w-100 border-0 text-left">
+                            <i class="fas fa-book"></i> Education
+                        </button>
+                        <button class="btn btn-outline-light d-block w-100 border-0 text-left">
+                            <i class="fas fa-book"></i> Interests
+                        </button>
+                    </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+                    aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+
+                <div class="collapse navbar-collapse d-md-flex flex-md-column w-100" id="navbarToggler">
+
+                    <a href="#projects" class="btn btn-outline-light border-0 mt-md-4 form-control">
+                        <i class="fas fa-project-diagram"></i> Projects
+                    </a>
+                    <a href="#skills" class="btn btn-outline-light border-0 mt-md-4 form-control">
+                        <i class="fas fa-skating"></i> Skills
+                    </a>
+                    <button class="btn btn-outline-light border-0 form-control mt-md-4 cmd" data-cmd="modal"
+                        data-type="contact">
+                        <i class="fas fa-comments"></i> Contact
+                    </button>
+
+                    <div
+                        class="form-inline justify-content-end justify-content-md-center my-md-4 my-sm-0 my-3 p-0 form-control bg-transparent border-0">
+                        <a target="_blank" href="https://github.com/ibsafi"
+                            class="btn btn-outline-warning border-0 p-1 mx-md-auto d-flex">
+                            <i class="fab fa-github m-auto" style="font-size:1.5em;"></i>
+                        </a>
+                        <a target="_blank" href="https://www.linkedin.com/in/ibsafi"
+                            class="btn btn-outline-warning border-0 p-1 mx-md-auto d-flex">
+                            <i class="fab fa-linkedin m-auto" style="font-size:1.5em;"></i>
+                        </a>
+                        <a target="_blank" href="https://www.linkedin.com/in/ibsafi"
+                            class="btn btn-outline-warning border-0 px-2 py-1 mx-md-auto d-flex">
+                            <i class="fas fa-file-download m-auto" style="font-size:1.5em;"></i>
+                        </a>
+                    </div>
+                </div>
+            </header>
+
+            <main class="col-12 col-lg-10 col-md-9 pt-3 container scroll update-height">
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        <div class="card shadow-lg" id="about">
+                            <div class="card-header bg-dark">
+                                <button class="btn btn-info">
+                                    <i class="fas fa-user-tie"></i> About
+                                </button>
+                                <button class="btn text-info float-right border-0" disabled>
+                                    <i class="fas fa-cog fa-pulse" style="font-size:1.5em;"></i>
+                                </button>
+                                <div class="progress mt-2 bg-transparent" style="height:0.55em;">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-info w-100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body jumbotron">
+                                <div class="card-title mb-5">
+                                    <h1 class="mb-0 display-2 text-uppercase font-weight-normal">
+                                        Ibrahim <span class="text-info">Safi</span>
+                                    </h1>
+                                    <h4 class="text-muted text-uppercase">Web & Software Developer · <a
+                                            class="text-info" href="mailto:ib.safi@hotmail.com">ib.safi@hotmail.com</a>
+                                    </h4>
+                                </div>
+                                <p class="lead mb-5">
+                                    I describe myself as a motivated and hard-working individual, eager
+                                    to learn to apply new skills in a fast-paced environment. I am
+                                    knowledgeable in programming and technology and have taken many
+                                    opportunities to further my understanding in this field.
+                                </p>
+                                <div class="form-inline justify-content-left pl-3 mb-5">
+                                    <a target="_blank" href="https://github.com/ibsafi"
+                                        class="btn btn-outline-dark mr-2 border-0">
+                                        <i class="fab fa-github m-auto" style="font-size:2em;"></i>
+                                    </a>
+                                    <a target="_blank" href="https://www.linkedin.com/in/ibsafi"
+                                        class="btn btn-outline-dark mr-2 border-0">
+                                        <i class="fab fa-linkedin m-auto" style="font-size:2em;"></i>
+                                    </a>
+                                    <a target="_blank" href="" class="btn mr-2 btn-outline-dark border-0">
+                                        <i class="fas fa-file-download m-auto" style="font-size:2em;"></i>
+                                    </a>
+                                </div>
+                                <hr class="m-0">
+                                <section class="d-flex flex-column py-5" id="experience">
+                                    <h1 class="mb-5">Experience</h1>
+                                    <div class="row mb-5">
+                                        <div class="col-12 col-lg-10 col-md-9 pr-md-0">
+                                            <h3 class="mb-0">Instructor Assistant</h3>
+                                            <div class="subheading mb-3">
+                                                University of Toronto - Trilogy Education
+                                            </div>
+                                            <p>
+                                                • Assisting and teaching students from University of Toronto
+                                                to
+                                                learn the fundamentals of Full Stack Web Development <br>
+                                                • Encouraging students to understand the concept of
+                                                front-end
+                                                and back-end principles. <br>
+                                                • Assisting lectures that have been carefully put together
+                                                by
+                                                Trilogy Education, this includes a 3 days per week bootcamp.
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-lg-2 col-md-3 p-md-0">
+                                            <h5 class="text-info text-md-right">Sep. 2018 - Present</h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mb-5">
+                                        <div class="col-12 col-lg-10 col-md-9 pr-md-0">
+                                            <h3 class="mb-0">Full Stack Web Developer</h3>
+                                            <div class="subheading mb-3">
+                                                Mitsubishi Motor Sales of Canada, Inc.
+                                            </div>
+                                            <p>
+                                                • Developed a production-ready cloud web application from
+                                                scratch for customers, dealerships, and employees using MEAN
+                                                stack. The portal allowed stakeholders to view vehicle
+                                                information and schedule a service appointment across the
+                                                country in real time. <br>• Built complex single page
+                                                applications and responsive user interface pertaining to the
+                                                Mitsubishi website. Developed using AngularJS, Object
+                                                Oriented
+                                                JavaScript, Bootstrap, HTML5, and CSS3. <br>• Developed
+                                                client/server-side authentication and validation services
+                                                through NodeJS packages to enable JWT tokens in order to
+                                                maintain sessions for users and administrator. This includes
+                                                creating RESTful API with express routes to handle CRUD
+                                                actions
+                                                using HTTP methods (GET, POST, PUT, PATCH, and DELETE).
+                                                <br>•
+                                                Infrastructure Development on AWS by employing services such
+                                                as
+                                                SES, EC2, Route 53, WorkMail, IAM, CodeCommit(Git), RDS, and
+                                                S3.
+                                                <br>• Created and managed user account profiles compliant
+                                                with
+                                                modern security standards and company policies. <br>•
+                                                Communicating with stakeholders on a weekly basis, as well
+                                                develop frequent progress reports. <br>• Issued
+                                                recommendations to the company regarding necessary upgrades
+                                                and
+                                                developed appropriate functionality. <br>• Performed various
+                                                automated tasks on existing applications that saved the
+                                                company
+                                                a significant amount of money.
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-lg-2 col-md-3 p-md-0">
+                                            <h5 class="text-info text-md-right">June 2017 - Present</h5>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-5">
+                                        <div class="col-12 col-lg-10 col-md-9 pr-md-0">
+                                            <h3 class="mb-0">
+                                                Equipment Clerk/ Database Management – Master of Digital
+                                                Media
+                                            </h3>
+                                            <div class="subheading mb-3">Ryerson University</div>
+                                            <p>
+                                                • Assist with development and implementation of scanning
+                                                system.
+                                                <br>• Assist with purchase recommendations. <br>• Web
+                                                checkout system management. <br>• Prepare workshops as
+                                                requested. <br>• Assist students with software and coding
+                                                needs. <br>• Research ways to assist with projects and
+                                                improve
+                                                delivery. <br>• Maintain scheduled hours to sign equipment
+                                                in
+                                                and out. <br>• Maintenance of all equipment and ensure
+                                                proper
+                                                updates installed. <br>• Teach graduate students to use
+                                                equipment. This includes computers, wearables, cameras,
+                                                robotics
+                                                and internet of things devices. <br>• Answer technical
+                                                questions in regards to projects and technical support.
+                                                <br>•
+                                                Maintain inventory
+                                            </p>
+                                        </div>
+                                        <div class="col-12 col-lg-2 col-md-3 p-md-0">
+                                            <h5 class="text-info text-md-right">Sep. 2016 - April 2017</h5>
+                                        </div>
+                                    </div>
+                                </section>
+                                <hr class="m-0">
+                                <section class="d-flex flex-column py-5" id="education">
+                                    <h1 class="mb-5">Education</h1>
+
+                                    <div class="row mb-5">
+                                        <div class="col-12 col-lg-10 col-md-9 pr-md-0">
+                                            <h3 class="mb-0">Ryerson University</h3>
+                                            <div class="subheading mb-3">
+                                                Honours Bachelor of Science in Computer Science
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-2 col-md-3 p-md-0">
+                                            <h5 class="text-info text-md-right">Sep. 2012 - May 2017</h5>
+                                        </div>
+                                    </div>
+                                </section>
+                                <hr class="m-0">
+                                <section class="d-flex flex-column py-5" id="interests">
+                                    <h1 class="mb-5">Interests</h1>
+                                    <p>
+                                        Apart from being a developer, I enjoy most of my time being
+                                        outdoors. In the winter, I enjoy playing ice hockey. During the
+                                        warmer months here in Toronto, I enjoy playing soccer, mountain
+                                        biking, camping in the woods, and kayaking.
+                                    </p>
+                                    <p>
+                                        When forced indoors, I follow a number of Netflix shows including
+                                        HBO's Game of Thrones, I spend a large amount of my free time
+                                        exploring the latest technology advancements in the development
+                                        world.
+                                    </p>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mb-3">
+                        <div class="card shadow-lg" id="projects">
+                            <div class="card-header bg-dark">
+                                <button class="btn btn-info">
+                                    <i class="fas fa-project-diagram"></i> Projects
+                                </button>
+                                <button class="btn text-info float-right border-0" disabled>
+                                    <i class="fas fa-cog fa-pulse" style="font-size:1.5em;"></i>
+                                </button>
+                                <div class="progress mt-2 bg-transparent" style="height:0.55em;">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-info w-100">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-body jumbotron px-0 px-md-3">
+                                <p class="card-text mx-3 mx-md-0">List of Staff & Technicians</p>
+                                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+                                    <div class="carousel-inner w-85 mx-auto">
+                                        <div class="carousel-item active">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Semkoo/notes</h5>
+                                                    <p class="card-text">This is my personal notes of codes
+                                                    </p>
+                                                </div>
+                                                <div class="card-footer text-muted  d-flex">JavaScript<a
+                                                        href="https://github.com/Semkoo/notes" target="_blank"
+                                                        class="ml-auto">More Info</a></div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Semkoo/notes</h5>
+                                                    <p class="card-text">This is my personal notes of codes
+                                                    </p>
+                                                </div>
+                                                <div class="card-footer text-muted  d-flex">JavaScript<a
+                                                        href="https://github.com/Semkoo/notes" target="_blank"
+                                                        class="ml-auto">More Info</a></div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Semkoo/notes</h5>
+                                                    <p class="card-text">This is my personal notes of codes
+                                                    </p>
+                                                </div>
+                                                <div class="card-footer text-muted  d-flex">JavaScript<a
+                                                        href="https://github.com/Semkoo/notes" target="_blank"
+                                                        class="ml-auto">More Info</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                                        data-slide="prev">
+                                        <i class="fas fa-chevron-left text-dark"></i>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                                        data-slide="next">
+                                        <i class="fas fa-chevron-right text-dark"></i>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 mb-3">
+                        <div class="card shadow-lg" id="skills">
+                            <div class="card-header bg-dark">
+                                <button class="btn btn-info">
+                                    <i class="fas fa-skating"></i> skills
+                                </button>
+                                <button class="btn text-info float-right border-0" disabled>
+                                    <i class="fas fa-cog fa-pulse" style="font-size:1.5em;"></i>
+                                </button>
+                                <div class="progress mt-2 bg-transparent" style="height:0.55em;">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-info w-100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body jumbotron">
+                                <h5 class="card-title">List of Software Skills</h5>
+                                <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+                                <section class="row form-inline justify-content-center">
+                                    <span class="btn btn-outline-dark border-0">
+                                        <i class="fab fa-php" style="font-size:2.5em;"></i>
+                                    </span>
+                                    <span class="btn btn-outline-dark border-0">
+                                        <i class="fab fa-git" style="font-size:2.5em;"></i>
+                                    </span>
+                                    <span class="btn btn-outline-dark border-0">
+                                        <i class="fab fa-python" style="font-size:2.5em;"></i>
+                                    </span>
+                                    <span class="btn btn-outline-dark border-0">
+                                        <i class="fab fa-html5" style="font-size:2.5em;"></i>
+                                    </span>
+                                    <span class="btn btn-outline-dark border-0">
+                                        <i class="fab fa-css3-alt" style="font-size:2.5em;"></i>
+                                    </span>
+                                    <span class="btn btn-outline-dark border-0">
+                                        <i class="fab fa-js-square" style="font-size:2.5em;"></i>
+                                    </span>
+                                    <span class="btn btn-outline-dark border-0">
+                                        <i class="fab fa-angular" style="font-size:2.5em;"></i>
+                                    </span>
+                                    <span class="btn btn-outline-dark border-0">
+                                        <i class="fab fa-react" style="font-size:2.5em;"></i>
+                                    </span>
+                                    <span class="btn btn-outline-dark border-0">
+                                        <i class="fab fa-node-js" style="font-size:2.5em;"></i>
+                                    </span>
+                                    <span class="btn btn-outline-dark border-0">
+                                        <i class="fab fa-sass" style="font-size:2.5em;"></i>
+                                    </span>
+
+                                    <span class="btn btn-outline-dark border-0">
+                                        <i class="fab fa-java" style="font-size:2.5em;"></i>
+                                    </span>
+                                    <span class="btn btn-outline-dark border-0">
+                                        <i class="fab fa-gulp" style="font-size:2.5em;"></i>
+                                    </span>
+                                    <span class="btn btn-outline-dark border-0">
+                                        <i class="fab fa-grunt" style="font-size:2.5em;"></i>
+                                    </span>
+                                    <span class="btn btn-outline-dark border-0">
+                                        <i class="fab fa-npm" style="font-size:2.5em;"></i>
+                                    </span>
+                                </section>
+                                <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+                                    <div class="subheading mb-3">Workflow</div>
+                                    <ul class="fa-ul mb-0">
+                                        <li>
+                                            <i class="fa-li fa fa-check"></i> Mobile-First, Responsive
+                                            Design
+                                        </li>
+                                        <li>
+                                            <i class="fa-li fa fa-check"></i> Cross Browser Testing &amp;
+                                            Debugging
+                                        </li>
+                                        <li><i class="fa-li fa fa-check"></i> Cross Functional Teams</li>
+                                        <li>
+                                            <i class="fa-li fa fa-check"></i> Agile Development &amp; Scrum
+                                        </li>
+                                    </ul>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-dark-blue">
+                </div>
+                <form>
+                    <div class="modal-body text-center">
+                        <div class="container pl-3">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
