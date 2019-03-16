@@ -4,7 +4,7 @@ body{
 }
 body::after {
   content: "";
-  background: url("https://data.whicdn.com/images/324606380/original.gif");
+  background: url("../images/background.gif");
   opacity: 0.25;
   top: 0;
   left: 0;

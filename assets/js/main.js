@@ -233,12 +233,13 @@ $(function () {
     }
 
     function navbar_resize() {
-        if ($(window).width() > 770) {
+        if ($(window).width() > 770) {// larger than small screen
             $(".auto-height, .update-height").attr("style", "max-height:" + $(window).height() + "px; min-height: 33em");
             $(".auto-height").addClass("scroll")
         } else {
             $(".auto-height").attr("style", "height: auto");
             $(".auto-height").removeClass("scroll")
+            $(".update-height").attr("style", "max-height:" + ($(window).height() - $(".auto-height").height() - 16.5) + "px;");
         }
     }
 
