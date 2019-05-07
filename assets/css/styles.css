@@ -27,11 +27,14 @@ body::after {
   color: #457B9D!important;;
 }
 
-.text-primary {
+.text-primary{
   color: #bd5d38!important;
 }
 
-h1,h2,h3,h4,h5,h6{
+.bg-primary{
+  background-color: #bd5d38!important;
+}
+h1,h2,h3,h4,h5,h6, .subheading{
   font-family: 'Saira Extra Condensed',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
 }
 

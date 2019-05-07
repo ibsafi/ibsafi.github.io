@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Dashboard</title>
+    <title>Ibrahim Safi Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Custom fonts for this template -->
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
@@ -38,44 +38,41 @@
                 <div class="navbar-brand btn-group p-0 m-0 border-0 d-md-flex flex-md-column" role="group">
                     <img class="d-none d-md-inline-block img-profile rounded-circle mx-auto my-5 w-55"
                         src="./assets/images/profile.png" alt="MyPhoto">
-                    <button class="btn btn-outline-light border-0 dropdown-toggle" id="btnGroupDrop" type="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-user-tie"></i> About
+                    <button class="btn btn-outline-light border-0 rounded dropdown-toggle" id="btnGroupDrop"
+                        type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-user-tie"></i> <span class="ml-2">About</span>
                     </button>
 
-                    <div class="dropdown-menu bg-light-blue border-0" aria-labelledby="btnGroupDrop">
-                        <button class="btn btn-outline-light d-block w-100 border-0 text-left">
-                            <i class="far fa-user"></i> Myself
-                        </button>
-                        <button class="btn btn-outline-light d-block w-100 border-0 text-left">
-                            <i class="fas fa-dumbbell"></i> Experience
-                        </button>
-                        <button class="btn btn-outline-light d-block w-100 border-0 text-left">
-                            <i class="fas fa-book"></i> Education
-                        </button>
-                        <button class="btn btn-outline-light d-block w-100 border-0 text-left">
-                            <i class="fas fa-book"></i> Interests
-                        </button>
+                    <div class="dropdown-menu bg-light border-0" aria-labelledby="btnGroupDrop">
+                        <a href="#aboutme" class="btn btn-outline-dark d-block w-100 border-0 text-center">
+                            <i class="fas fa-address-card"></i><span class="ml-2">Myself</span>
+                        </a>
+                        <a href="#experience" class="btn btn-outline-dark d-block w-100 border-0 text-center">
+                            <i class="fas fa-dumbbell"></i> <span class="ml-2">Experience</span>
+                        </a>
+                        <a href="#education" class="btn btn-outline-dark d-block w-100 border-0 text-center">
+                            <i class="fas fa-graduation-cap"></i> <span class="ml-2">Education</span>
+                        </a>
+                        <a href="#interests" class="btn btn-outline-dark d-block w-100 border-0 text-center">
+                            <i class="fas fa-magnet"></i> <span class="ml-2">Interests</span>
+                        </a>
                     </div>
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
                     aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
-
-
                 <div class="collapse navbar-collapse d-md-flex flex-md-column w-100" id="navbarToggler">
 
                     <a href="#projects" class="btn btn-outline-light border-0 mt-md-4 form-control">
-                        <i class="fas fa-project-diagram"></i> Projects
+                        <i class="fas fa-project-diagram"></i> <span class="ml-2">Projects</span>
                     </a>
                     <a href="#skills" class="btn btn-outline-light border-0 mt-md-4 form-control">
-                        <i class="fas fa-skating"></i> Skills
+                        <i class="fas fa-skating"></i> <span class="ml-2">Skills</span>
                     </a>
                     <button class="btn btn-outline-light border-0 form-control mt-md-4 cmd" data-cmd="modal"
                         data-type="contact">
-                        <i class="fas fa-comments"></i> Contact
+                        <i class="fas fa-comments"></i> <span class="ml-2">Contact</span>
                     </button>
 
                     <div
@@ -112,168 +109,146 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card-body jumbotron">
-                                <div class="card-title mb-5">
-                                    <h1 class="mb-0 display-2 text-uppercase font-weight-normal">
-                                        Ibrahim <span class="text-info">Safi</span>
-                                    </h1>
-                                    <h4 class="text-muted text-uppercase">Web & Software Developer · <a
-                                            class="text-info" href="mailto:ib.safi@hotmail.com">ib.safi@hotmail.com</a>
-                                    </h4>
-                                </div>
-                                <p class="lead mb-5">
-                                    I describe myself as a motivated and hard-working individual, eager
-                                    to learn to apply new skills in a fast-paced environment. I am
-                                    knowledgeable in programming and technology and have taken many
-                                    opportunities to further my understanding in this field.
-                                </p>
-                                <div class="form-inline justify-content-left pl-3 mb-5">
-                                    <a target="_blank" href="https://github.com/ibsafi"
-                                        class="btn btn-outline-dark mr-2 border-0">
-                                        <i class="fab fa-github m-auto" style="font-size:2em;"></i>
-                                    </a>
-                                    <a target="_blank" href="https://www.linkedin.com/in/ibsafi"
-                                        class="btn btn-outline-dark mr-2 border-0">
-                                        <i class="fab fa-linkedin m-auto" style="font-size:2em;"></i>
-                                    </a>
-                                    <a target="_blank" href="" class="btn mr-2 btn-outline-dark border-0">
-                                        <i class="fas fa-file-download m-auto" style="font-size:2em;"></i>
-                                    </a>
-                                </div>
+                            <div class="card-body jumbotron mb-0">
+                                <section class="d-flex flex-column" id="aboutme">
+                                    <h1 class="mb-5 text-info text-uppercase font-weight-bold"><i
+                                            class="far fa-address-card"></i> About Me</h1>
+                                    <div class="row mb-5 pl-4">
+                                        <div class="card-title mb-3">
+                                            <h1 class="mb-0 display-2 text-uppercase font-weight-normal">
+                                                Ibrahim <span class="text-info">Safi</span>
+                                            </h1>
+                                            <h4 class="text-muted text-uppercase">
+                                                Electrical Engineer / Web & Software Developer · <a class="text-info"
+                                                    href="mailto:ibraheemsafi@gmail.com">ibraheemsafi@gmail.com</a>
+                                            </h4>
+                                        </div>
+                                        <p class="text-muted lead text-justify font-weight-normal mb-5">
+                                            I describe myself as a motivated and hard-working individual, eager
+                                            to learn to apply new skills in a fast-paced environment. I am
+                                            knowledgeable in programming and technology and have taken many
+                                            opportunities to further my understanding in this field.
+                                        </p>
+                                        <div class="form-inline justify-content-left pl-3 mb-5">
+                                            <a target="_blank" href="https://github.com/ibsafi"
+                                                class="btn btn-outline-dark mr-2 border-0">
+                                                <i class="fab fa-github m-auto" style="font-size:2.1em;"></i>
+                                            </a>
+                                            <a target="_blank" href="https://www.linkedin.com/in/ibsafi"
+                                                class="btn btn-outline-dark mr-2 border-0">
+                                                <i class="fab fa-linkedin m-auto" style="font-size:2.1em;"></i>
+                                            </a>
+                                            <a target="_blank" href="" class="btn mr-2 btn-outline-dark border-0">
+                                                <i class="fas fa-file-download m-auto" style="font-size:2.1em;"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </section>
                                 <hr class="m-0">
                                 <section class="d-flex flex-column py-5" id="experience">
-                                    <h1 class="mb-5">Experience</h1>
-                                    <div class="row mb-5">
+                                    <h1 class="mb-5 text-info text-uppercase font-weight-bold"><i
+                                            class="fas fa-dumbbell"></i> Experience</h1>
+                                    <div class="row mb-5 pl-4">
                                         <div class="col-12 col-lg-10 col-md-9 pr-md-0">
-                                            <h3 class="mb-0">Instructor Assistant</h3>
-                                            <div class="subheading mb-3">
-                                                University of Toronto - Trilogy Education
-                                            </div>
-                                            <p>
-                                                • Assisting and teaching students from University of Toronto
-                                                to
-                                                learn the fundamentals of Full Stack Web Development <br>
-                                                • Encouraging students to understand the concept of
-                                                front-end
-                                                and back-end principles. <br>
-                                                • Assisting lectures that have been carefully put together
-                                                by
-                                                Trilogy Education, this includes a 3 days per week bootcamp.
-                                            </p>
-                                        </div>
-                                        <div class="col-12 col-lg-2 col-md-3 p-md-0">
-                                            <h5 class="text-info text-md-right">Sep. 2018 - Present</h5>
-                                        </div>
-                                    </div>
+                                            <h3 class="mb-1 font-weight-bold">Energy Engineering and IT Associate</h3>
+                                            <h4 class="text-muted font-weight-bold mb-3">
+                                                Platek Services Inc (PSI) - Consulting Engineers
+                                            </h4>
+                                            <p class="text-muted lead text-justify my-2">
+                                                • Developed a production-ready cloud web applications from
+                                                scratch for customers using MySQL, PHP, Python, Z-Wave Technology for
+                                                energy management and building automation solutions. The portal
+                                                allowed users to control and monitor the building's HVAC, Lighting, and
+                                                Water Heating "Boiler" systems with real-time functionalities.</p>
 
-                                    <div class="row mb-5">
-                                        <div class="col-12 col-lg-10 col-md-9 pr-md-0">
-                                            <h3 class="mb-0">Full Stack Web Developer</h3>
-                                            <div class="subheading mb-3">
-                                                Mitsubishi Motor Sales of Canada, Inc.
-                                            </div>
-                                            <p>
-                                                • Developed a production-ready cloud web application from
-                                                scratch for customers, dealerships, and employees using MEAN
-                                                stack. The portal allowed stakeholders to view vehicle
-                                                information and schedule a service appointment across the
-                                                country in real time. <br>• Built complex single page
-                                                applications and responsive user interface pertaining to the
-                                                Mitsubishi website. Developed using AngularJS, Object
-                                                Oriented
-                                                JavaScript, Bootstrap, HTML5, and CSS3. <br>• Developed
-                                                client/server-side authentication and validation services
-                                                through NodeJS packages to enable JWT tokens in order to
-                                                maintain sessions for users and administrator. This includes
-                                                creating RESTful API with express routes to handle CRUD
-                                                actions
-                                                using HTTP methods (GET, POST, PUT, PATCH, and DELETE).
-                                                <br>•
-                                                Infrastructure Development on AWS by employing services such
-                                                as
-                                                SES, EC2, Route 53, WorkMail, IAM, CodeCommit(Git), RDS, and
-                                                S3.
-                                                <br>• Created and managed user account profiles compliant
-                                                with
-                                                modern security standards and company policies. <br>•
-                                                Communicating with stakeholders on a weekly basis, as well
-                                                develop frequent progress reports. <br>• Issued
-                                                recommendations to the company regarding necessary upgrades
-                                                and
-                                                developed appropriate functionality. <br>• Performed various
-                                                automated tasks on existing applications that saved the
-                                                company
-                                                a significant amount of money.
-                                            </p>
+                                            <p class="text-muted lead text-justify my-2">
+                                                • Developed and designed complex single page applications with
+                                                responsive user interface pertaining to the energy management and
+                                                building automation solutions using Object Oriented JavaScript, JQuery,
+                                                GoogleCharts, HTML5, CSS3, and client/server-side authentication</p>
+
+                                            <p class="text-muted lead text-justify my-2">
+                                                • Developed embedded system firmware and sophisticated software
+                                                algorithims for MCU, ARM and SBC pertaining to the smart solutions and
+                                                products that used to integrate with instruments, data aquisition and
+                                                actuator devices, building controlling systems, and IoT networks and
+                                                populate data to cloud databases as local in-action server.</p>
+
+                                            <p class="text-muted lead text-justify my-2">
+                                                • Researched and tested various RF technologies by the capabilities of
+                                                range, wall
+                                                penetration and data baud-rates at different physical conditions to
+                                                be used for building automation solutions as Z-Wave technology was
+                                                selected due to the network's added features of security, flexibility,
+                                                reliability, and scalability.</p>
+                                            <p class="text-muted lead text-justify my-2">
+                                                • Provided technical support and onsite customers training sessions for
+                                                5+ products and 15+ sites.</p>
+
+                                            <p class="text-muted lead text-justify my-2">
+                                                • Developed client/server-side authentication on PHP and experiences
+                                                managed
+                                                database's user privileges. </p>
                                         </div>
                                         <div class="col-12 col-lg-2 col-md-3 p-md-0">
-                                            <h5 class="text-info text-md-right">June 2017 - Present</h5>
-                                        </div>
-                                    </div>
-                                    <div class="row mb-5">
-                                        <div class="col-12 col-lg-10 col-md-9 pr-md-0">
-                                            <h3 class="mb-0">
-                                                Equipment Clerk/ Database Management – Master of Digital
-                                                Media
-                                            </h3>
-                                            <div class="subheading mb-3">Ryerson University</div>
-                                            <p>
-                                                • Assist with development and implementation of scanning
-                                                system.
-                                                <br>• Assist with purchase recommendations. <br>• Web
-                                                checkout system management. <br>• Prepare workshops as
-                                                requested. <br>• Assist students with software and coding
-                                                needs. <br>• Research ways to assist with projects and
-                                                improve
-                                                delivery. <br>• Maintain scheduled hours to sign equipment
-                                                in
-                                                and out. <br>• Maintenance of all equipment and ensure
-                                                proper
-                                                updates installed. <br>• Teach graduate students to use
-                                                equipment. This includes computers, wearables, cameras,
-                                                robotics
-                                                and internet of things devices. <br>• Answer technical
-                                                questions in regards to projects and technical support.
-                                                <br>•
-                                                Maintain inventory
-                                            </p>
-                                        </div>
-                                        <div class="col-12 col-lg-2 col-md-3 p-md-0">
-                                            <h5 class="text-info text-md-right">Sep. 2016 - April 2017</h5>
+                                            <h4 class="text-info text-md-right">11/2016 - Present</h4>
                                         </div>
                                     </div>
                                 </section>
                                 <hr class="m-0">
                                 <section class="d-flex flex-column py-5" id="education">
-                                    <h1 class="mb-5">Education</h1>
-
-                                    <div class="row mb-5">
+                                    <h1 class="mb-5 text-info text-uppercase font-weight-bold"><i
+                                            class="fas fa-graduation-cap"></i> Education</h1>
+                                    <div class="row mb-5 pl-4">
                                         <div class="col-12 col-lg-10 col-md-9 pr-md-0">
-                                            <h3 class="mb-0">Ryerson University</h3>
-                                            <div class="subheading mb-3">
-                                                Honours Bachelor of Science in Computer Science
-                                            </div>
+                                            <h3 class="mb-1 font-weight-bold">School of Continuous Studies, University
+                                                of Toronto - Mississauga, ON</h3>
+                                            <h4 class="text-muted font-weight-bold mb-3">
+                                                Full Stack Web Development Bootcamp Certificate
+                                            </h4>
+                                            <p class="text-muted lead text-justify font-weight-normal my-2">
+                                                An intensive 24-week long boot camp dedicated to designing and building
+                                                web applications. Skills learned consisted of HTML5, CSS3, JavaScript,
+                                                JQuery, Bootstrap, Firebase, NodeJS, MySQL, MongoDB, GitHub, Heroku,
+                                                Express, HandlebarsJS, & ReactJS.
+                                            </p>
                                         </div>
                                         <div class="col-12 col-lg-2 col-md-3 p-md-0">
-                                            <h5 class="text-info text-md-right">Sep. 2012 - May 2017</h5>
+                                            <h4 class="text-info text-md-right">09/2018 - 03/2019</h4>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-5 pl-4">
+                                        <div class="col-12 col-lg-10 col-md-9 pr-md-0">
+                                            <h3 class="mb-1 font-weight-bold">Princess Sumaya University for Technology
+                                                - Jordan</h3>
+                                            <h4 class="text-muted font-weight-bold mb-3">
+                                                Honours Bachelor of Applied Science in Electrical Power & Energy
+                                                Engineering
+                                            </h4>
+                                        </div>
+                                        <div class="col-12 col-lg-2 col-md-3 p-md-0">
+                                            <h4 class="text-info text-md-right">09/2010 - 06/2015</h4>
                                         </div>
                                     </div>
                                 </section>
                                 <hr class="m-0">
                                 <section class="d-flex flex-column py-5" id="interests">
-                                    <h1 class="mb-5">Interests</h1>
-                                    <p>
-                                        Apart from being a developer, I enjoy most of my time being
-                                        outdoors. In the winter, I enjoy playing ice hockey. During the
-                                        warmer months here in Toronto, I enjoy playing soccer, mountain
-                                        biking, camping in the woods, and kayaking.
-                                    </p>
-                                    <p>
-                                        When forced indoors, I follow a number of Netflix shows including
-                                        HBO's Game of Thrones, I spend a large amount of my free time
-                                        exploring the latest technology advancements in the development
-                                        world.
-                                    </p>
+                                    <h1 class="mb-5 text-info text-uppercase font-weight-bold"><i
+                                            class="fas fa-magnet"></i> Interests</h1>
+                                    <div class="row mb-5 pl-4">
+                                        <p class="text-muted lead text-justify font-weight-normal my-2">
+                                            Apart from being a developer, I enjoy most of my time being
+                                            outdoors. In the winter, I enjoy playing ice hockey. During the
+                                            warmer months here in Toronto, I enjoy playing soccer, mountain
+                                            biking, running in the parks.
+                                        </p>
+                                        <p class="text-muted lead text-justify font-weight-normal my-2">
+                                            When forced indoors, I follow a number of Netflix shows including
+                                            HBO's Game of Thrones, I spend a large amount of my free time
+                                            exploring the latest technology advancements in the development
+                                            world.
+                                        </p>
+                                    </div>
                                 </section>
                             </div>
                         </div>
@@ -294,54 +269,421 @@
                                 </div>
                             </div>
 
-                            <div class="card-body jumbotron px-0 px-md-3">
-                                <p class="card-text mx-3 mx-md-0">List of Staff & Technicians</p>
-                                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-
+                            <div class="card-body jumbotron mb-0">
+                                <h3 class="mb-5 text-info text-uppercase pl-3">List of Developed Applications and
+                                    Projects</h3>
+                                <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
                                     <div class="carousel-inner w-85 mx-auto">
                                         <div class="carousel-item active">
                                             <div class="card">
                                                 <div class="card-body">
-                                                    <h5 class="card-title">Semkoo/notes</h5>
-                                                    <p class="card-text">This is my personal notes of codes
+                                                    <h3 class="card-title">Google Books Search - React</h3>
+                                                    <p class="card-text">This is an app searching books authors using
+                                                        google API
                                                     </p>
                                                 </div>
-                                                <div class="card-footer text-muted  d-flex">JavaScript<a
-                                                        href="https://github.com/Semkoo/notes" target="_blank"
-                                                        class="ml-auto">More Info</a></div>
+                                                <div class="card-footer text-muted d-flex">
+                                                    <!-- Programming languages & tools  -->
+                                                    <span class="btn btn-outline-dark border-0">
+                                                        <i class="fab fa-python" style="font-size:2em;"></i>
+                                                    </span>
+                                                    <!-- Repositories Link -->
+                                                    <a href="https://github.com/ibsafi/Google_Books_React_Search"
+                                                        target="_blank" class="ml-auto">
+                                                        <span class="btn btn-outline-info border-0">
+                                                            <i class="fas fa-external-link-alt"
+                                                                style="font-size:2em;"></i>
+                                                        </span>
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="carousel-item">
                                             <div class="card">
                                                 <div class="card-body">
-                                                    <h5 class="card-title">Semkoo/notes</h5>
-                                                    <p class="card-text">This is my personal notes of codes
+                                                    <h3 class="card-title">Clicky Game - React</h3>
+                                                    <p class="card-text">This is an app searching books authors using
+                                                        google APIf
                                                     </p>
                                                 </div>
-                                                <div class="card-footer text-muted  d-flex">JavaScript<a
-                                                        href="https://github.com/Semkoo/notes" target="_blank"
-                                                        class="ml-auto">More Info</a></div>
+                                                <div class="card-footer text-muted d-flex">
+                                                    <!-- Programming languages & tools  -->
+                                                    <span class="btn btn-outline-dark border-0">
+                                                        <i class="fab fa-python" style="font-size:2em;"></i>
+                                                    </span>
+                                                    <!-- Repositories Link -->
+                                                    <a href="https://github.com/ibsafi/ClickyGameUsingReact"
+                                                        target="_blank" class="ml-auto">
+                                                        <span class="btn btn-outline-info border-0">
+                                                            <i class="fas fa-external-link-alt"
+                                                                style="font-size:2em;"></i>
+                                                        </span>
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="carousel-item">
                                             <div class="card">
                                                 <div class="card-body">
-                                                    <h5 class="card-title">Semkoo/notes</h5>
-                                                    <p class="card-text">This is my personal notes of codes
-                                                    </p>
+                                                    <h3 class="card-title">Website Scraper - NodeJS</h3>
+                                                    <p class="card-text"></p>
                                                 </div>
-                                                <div class="card-footer text-muted  d-flex">JavaScript<a
-                                                        href="https://github.com/Semkoo/notes" target="_blank"
-                                                        class="ml-auto">More Info</a></div>
+                                                <div class="card-footer text-muted d-flex">
+                                                    <!-- Programming languages & tools  -->
+                                                    <span class="btn btn-outline-dark border-0">
+                                                        <i class="fab fa-python" style="font-size:2em;"></i>
+                                                    </span>
+                                                    <!-- Repositories Link -->
+                                                    <a href="https://github.com/ibsafi/scraperNodeJS" target="_blank"
+                                                        class="ml-auto">
+                                                        <span class="btn btn-outline-info border-0">
+                                                            <i class="fas fa-external-link-alt"
+                                                                style="font-size:2em;"></i>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h3 class="card-title">Eat Da Burger - HandlebarsJS & Sequalized ORM
+                                                    </h3>
+                                                    <p class="card-text"></p>
+                                                </div>
+                                                <div class="card-footer text-muted d-flex">
+                                                    <!-- Programming languages & tools  -->
+                                                    <span class="btn btn-outline-dark border-0">
+                                                        <i class="fab fa-python" style="font-size:2em;"></i>
+                                                    </span>
+                                                    <!-- Repositories Link -->
+                                                    <a href="https://github.com/ibsafi/sequelizedBurger" target="_blank"
+                                                        class="ml-auto">
+                                                        <span class="btn btn-outline-info border-0">
+                                                            <i class="fas fa-external-link-alt"
+                                                                style="font-size:2em;"></i>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h3 class="card-title">Eat Da Burger - HandlebarsJS & homemade ORM
+                                                    </h3>
+                                                    <p class="card-text"></p>
+                                                </div>
+                                                <div class="card-footer text-muted d-flex">
+                                                    <!-- Programming languages & tools  -->
+                                                    <span class="btn btn-outline-dark border-0">
+                                                        <i class="fab fa-python" style="font-size:2em;"></i>
+                                                    </span>
+                                                    <!-- Repositories Link -->
+                                                    <a href="https://github.com/ibsafi/burger" target="_blank"
+                                                        class="ml-auto">
+                                                        <span class="btn btn-outline-info border-0">
+                                                            <i class="fas fa-external-link-alt"
+                                                                style="font-size:2em;"></i>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h3 class="card-title">wordGuess - NodeJS
+                                                    </h3>
+                                                    <p class="card-text"></p>
+                                                </div>
+                                                <div class="card-footer text-muted d-flex">
+                                                    <!-- Programming languages & tools  -->
+                                                    <span class="btn btn-outline-dark border-0">
+                                                        <i class="fab fa-python" style="font-size:2em;"></i>
+                                                    </span>
+                                                    <!-- Repositories Link -->
+                                                    <a href="https://github.com/ibsafi/wordGuess-NodeJS" target="_blank"
+                                                        class="ml-auto">
+                                                        <span class="btn btn-outline-info border-0">
+                                                            <i class="fas fa-external-link-alt"
+                                                                style="font-size:2em;"></i>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h3 class="card-title">CLI Inventory - NodeJS & MySQL</h3>
+                                                    <p class="card-text"></p>
+                                                </div>
+                                                <div class="card-footer text-muted d-flex">
+                                                    <!-- Programming languages & tools  -->
+                                                    <span class="btn btn-outline-dark border-0">
+                                                        <i class="fab fa-python" style="font-size:2em;"></i>
+                                                    </span>
+                                                    <!-- Repositories Link -->
+                                                    <a href="https://github.com/ibsafi/NodeJS-with-MySQL"
+                                                        target="_blank" class="ml-auto">
+                                                        <span class="btn btn-outline-info border-0">
+                                                            <i class="fas fa-external-link-alt"
+                                                                style="font-size:2em;"></i>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h3 class="card-title">Friend Finder - NodeJS</h3>
+                                                    <p class="card-text"></p>
+                                                </div>
+                                                <div class="card-footer text-muted d-flex">
+                                                    <!-- Programming languages & tools  -->
+                                                    <span class="btn btn-outline-dark border-0">
+                                                        <i class="fab fa-python" style="font-size:2em;"></i>
+                                                    </span>
+                                                    <!-- Repositories Link -->
+                                                    <a href="https://github.com/ibsafi/FriendFinder" target="_blank"
+                                                        class="ml-auto">
+                                                        <span class="btn btn-outline-info border-0">
+                                                            <i class="fas fa-external-link-alt"
+                                                                style="font-size:2em;"></i>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h3 class="card-title">LIRI CLI App - NodeJS</h3>
+                                                    <p class="card-text"></p>
+                                                </div>
+                                                <div class="card-footer text-muted d-flex">
+                                                    <!-- Programming languages & tools  -->
+                                                    <span class="btn btn-outline-dark border-0">
+                                                        <i class="fab fa-python" style="font-size:2em;"></i>
+                                                    </span>
+                                                    <!-- Repositories Link -->
+                                                    <a href="https://github.com/ibsafi/liri-node-app" target="_blank"
+                                                        class="ml-auto">
+                                                        <span class="btn btn-outline-info border-0">
+                                                            <i class="fas fa-external-link-alt"
+                                                                style="font-size:2em;"></i>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h3 class="card-title">RPS Multiplayer - FirebaseDB</h3>
+                                                    <p class="card-text"></p>
+                                                </div>
+                                                <div class="card-footer text-muted d-flex">
+                                                    <!-- Programming languages & tools  -->
+                                                    <span class="btn btn-outline-dark border-0">
+                                                        <i class="fab fa-python" style="font-size:2em;"></i>
+                                                    </span>
+                                                    <!-- Repositories Link -->
+                                                    <a href="https://github.com/ibsafi/RPS-Multiplayer" target="_blank"
+                                                        class="ml-auto">
+                                                        <span class="btn btn-outline-info border-0">
+                                                            <i class="fas fa-external-link-alt"
+                                                                style="font-size:2em;"></i>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h3 class="card-title">GIPHY-API</h3>
+                                                    <p class="card-text"></p>
+                                                </div>
+                                                <div class="card-footer text-muted d-flex">
+                                                    <!-- Programming languages & tools  -->
+                                                    <span class="btn btn-outline-dark border-0">
+                                                        <i class="fab fa-python" style="font-size:2em;"></i>
+                                                    </span>
+                                                    <!-- Repositories Link -->
+                                                    <a href="https://ibsafi.github.io/GIPHY-API/" target="_blank"
+                                                        class="ml-auto">
+                                                        <span class="btn btn-outline-info border-0">
+                                                            <i class="fas fa-external-link-alt"
+                                                                style="font-size:2em;"></i>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h3 class="card-title">TriviaGame</h3>
+                                                    <p class="card-text"></p>
+                                                </div>
+                                                <div class="card-footer text-muted d-flex">
+                                                    <!-- Programming languages & tools  -->
+                                                    <span class="btn btn-outline-dark border-0">
+                                                        <i class="fab fa-python" style="font-size:2em;"></i>
+                                                    </span>
+                                                    <!-- Repositories Link -->
+                                                    <a href="https://ibsafi.github.io/TriviaGame/" target="_blank"
+                                                        class="ml-auto">
+                                                        <span class="btn btn-outline-info border-0">
+                                                            <i class="fas fa-external-link-alt"
+                                                                style="font-size:2em;"></i>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h3 class="card-title">Star Wars Game</h3>
+                                                    <p class="card-text"></p>
+                                                </div>
+                                                <div class="card-footer text-muted d-flex">
+                                                    <!-- Programming languages & tools  -->
+                                                    <span class="btn btn-outline-dark border-0">
+                                                        <i class="fab fa-python" style="font-size:2em;"></i>
+                                                    </span>
+                                                    <!-- Repositories Link -->
+                                                    <a href="https://ibsafi.github.io/Star-Wars-Game/" target="_blank"
+                                                        class="ml-auto">
+                                                        <span class="btn btn-outline-info border-0">
+                                                            <i class="fas fa-external-link-alt"
+                                                                style="font-size:2em;"></i>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h3 class="card-title">Ward-Guess Game</h3>
+                                                    <p class="card-text"></p>
+                                                </div>
+                                                <div class="card-footer text-muted d-flex">
+                                                    <!-- Programming languages & tools  -->
+                                                    <span class="btn btn-outline-dark border-0">
+                                                        <i class="fab fa-python" style="font-size:2em;"></i>
+                                                    </span>
+                                                    <!-- Repositories Link -->
+                                                    <a href="https://ibsafi.github.io/WordGuessGame/" target="_blank"
+                                                        class="ml-auto">
+                                                        <span class="btn btn-outline-info border-0">
+                                                            <i class="fas fa-external-link-alt"
+                                                                style="font-size:2em;"></i>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h3 class="card-title">Psychic Game</h3>
+                                                    <p class="card-text"></p>
+                                                </div>
+                                                <div class="card-footer text-muted d-flex">
+                                                    <!-- Programming languages & tools  -->
+                                                    <span class="btn btn-outline-dark border-0">
+                                                        <i class="fab fa-python" style="font-size:2em;"></i>
+                                                    </span>
+                                                    <!-- Repositories Link -->
+                                                    <a href="https://ibsafi.github.io/Psychic-Game/" target="_blank"
+                                                        class="ml-auto">
+                                                        <span class="btn btn-outline-info border-0">
+                                                            <i class="fas fa-external-link-alt"
+                                                                style="font-size:2em;"></i>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h3 class="card-title"> Weather Widget OWM API</h3>
+                                                    <p class="card-text"></p>
+                                                </div>
+                                                <div class="card-footer text-muted d-flex">
+                                                    <!-- Programming languages & tools  -->
+                                                    <span class="btn btn-outline-dark border-0">
+                                                        <i class="fab fa-python" style="font-size:2em;"></i>
+                                                    </span>
+                                                    <!-- Repositories Link -->
+                                                    <a href="https://ibsafi.github.io/Weather-Widget-OWM/"
+                                                        target="_blank" class="ml-auto">
+                                                        <span class="btn btn-outline-info border-0">
+                                                            <i class="fas fa-external-link-alt"
+                                                                style="font-size:2em;"></i>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h3 class="card-title"> Customer Service Platform</h3>
+                                                    <p class="card-text"></p>
+                                                </div>
+                                                <div class="card-footer text-muted d-flex">
+                                                    <!-- Programming languages & tools  -->
+                                                    <span class="btn btn-outline-dark border-0">
+                                                        <i class="fab fa-css3-alt" style="font-size:2em;"></i>
+                                                    </span>
+                                                    <!-- Repositories Link -->
+                                                    <a href="https://github.com/ibsafi/Customer-Service-Platform"
+                                                        target="_blank" class="ml-auto">
+                                                        <span class="btn btn-outline-info border-0">
+                                                            <i class="fas fa-external-link-alt"
+                                                                style="font-size:2em;"></i>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h3 class="card-title"> People Connect Platform</h3>
+                                                    <p class="card-text"></p>
+                                                </div>
+                                                <div class="card-footer text-muted d-flex">
+                                                    <!-- Programming languages & tools  -->
+                                                    <span class="btn btn-outline-dark border-0">
+                                                        <i class="fab fa-css3-alt" style="font-size:2em;"></i>
+                                                    </span>
+                                                    <!-- Repositories Link -->
+                                                    <a href="https://github.com/ibsafi/People-Connect-Platform"
+                                                        target="_blank" class="ml-auto">
+                                                        <span class="btn btn-outline-info border-0">
+                                                            <i class="fas fa-external-link-alt"
+                                                                style="font-size:2em;"></i>
+                                                        </span>
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                                    <a class="carousel-control-prev" href="#carouselIndicators" role="button"
                                         data-slide="prev">
                                         <i class="fas fa-chevron-left text-dark"></i>
                                         <span class="sr-only">Previous</span>
                                     </a>
-                                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                                    <a class="carousel-control-next" href="#carouselIndicators" role="button"
                                         data-slide="next">
                                         <i class="fas fa-chevron-right text-dark"></i>
                                         <span class="sr-only">Next</span>
@@ -354,8 +696,8 @@
                     <div class="col-12 mb-3">
                         <div class="card shadow-lg" id="skills">
                             <div class="card-header bg-dark">
-                                <button class="btn btn-info">
-                                    <i class="fas fa-skating"></i> skills
+                                <button class="btn btn-info" id="skills">
+                                    <i class="fas fa-skating"></i> Skills
                                 </button>
                                 <button class="btn text-info float-right border-0" disabled>
                                     <i class="fas fa-cog fa-pulse" style="font-size:1.5em;"></i>
@@ -365,67 +707,80 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card-body jumbotron">
-                                <h5 class="card-title">List of Software Skills</h5>
-                                <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-                                <section class="row form-inline justify-content-center">
-                                    <span class="btn btn-outline-dark border-0">
-                                        <i class="fab fa-php" style="font-size:2.5em;"></i>
-                                    </span>
-                                    <span class="btn btn-outline-dark border-0">
-                                        <i class="fab fa-git" style="font-size:2.5em;"></i>
-                                    </span>
-                                    <span class="btn btn-outline-dark border-0">
-                                        <i class="fab fa-python" style="font-size:2.5em;"></i>
-                                    </span>
-                                    <span class="btn btn-outline-dark border-0">
-                                        <i class="fab fa-html5" style="font-size:2.5em;"></i>
-                                    </span>
-                                    <span class="btn btn-outline-dark border-0">
-                                        <i class="fab fa-css3-alt" style="font-size:2.5em;"></i>
-                                    </span>
-                                    <span class="btn btn-outline-dark border-0">
-                                        <i class="fab fa-js-square" style="font-size:2.5em;"></i>
-                                    </span>
-                                    <span class="btn btn-outline-dark border-0">
-                                        <i class="fab fa-angular" style="font-size:2.5em;"></i>
-                                    </span>
-                                    <span class="btn btn-outline-dark border-0">
-                                        <i class="fab fa-react" style="font-size:2.5em;"></i>
-                                    </span>
-                                    <span class="btn btn-outline-dark border-0">
-                                        <i class="fab fa-node-js" style="font-size:2.5em;"></i>
-                                    </span>
-                                    <span class="btn btn-outline-dark border-0">
-                                        <i class="fab fa-sass" style="font-size:2.5em;"></i>
-                                    </span>
-
-                                    <span class="btn btn-outline-dark border-0">
-                                        <i class="fab fa-java" style="font-size:2.5em;"></i>
-                                    </span>
-                                    <span class="btn btn-outline-dark border-0">
-                                        <i class="fab fa-gulp" style="font-size:2.5em;"></i>
-                                    </span>
-                                    <span class="btn btn-outline-dark border-0">
-                                        <i class="fab fa-grunt" style="font-size:2.5em;"></i>
-                                    </span>
-                                    <span class="btn btn-outline-dark border-0">
-                                        <i class="fab fa-npm" style="font-size:2.5em;"></i>
-                                    </span>
+                            <div class="card-body jumbotron mb-0">
+                                <section class="d-flex flex-column pb-5">
+                                    <h3 class="mb-5 text-info text-uppercase pl-3">Programming Languages &amp; Tools
+                                    </h3>
+                                    <div class="row form-inline justify-content-center">
+                                        <span class="btn btn-outline-dark border-0">
+                                            <i class="fab fa-canadian-maple-leaf" style="font-size:2.5em;"></i>
+                                        </span>
+                                        <span class="btn btn-outline-dark border-0">
+                                            <i class="fab fa-php" style="font-size:2.5em;"></i>
+                                        </span>
+                                        <span class="btn btn-outline-dark border-0">
+                                            <i class="fab fa-git" style="font-size:2.5em;"></i>
+                                        </span>
+                                        <span class="btn btn-outline-dark border-0">
+                                            <i class="fab fa-python" style="font-size:2.5em;"></i>
+                                        </span>
+                                        <span class="btn btn-outline-dark border-0">
+                                            <i class="fab fa-html5" style="font-size:2.5em;"></i>
+                                        </span>
+                                        <span class="btn btn-outline-dark border-0">
+                                            <i class="fab fa-css3-alt" style="font-size:2.5em;"></i>
+                                        </span>
+                                        <span class="btn btn-outline-dark border-0">
+                                            <i class="fab fa-js-square" style="font-size:2.5em;"></i>
+                                        </span>
+                                        <span class="btn btn-outline-dark border-0">
+                                            <i class="fab fa-react" style="font-size:2.5em;"></i>
+                                        </span>
+                                        <span class="btn btn-outline-dark border-0">
+                                            <i class="fab fa-node-js" style="font-size:2.5em;"></i>
+                                        </span>
+                                        <span class="btn btn-outline-dark border-0">
+                                            <i class="fab fa-sass" style="font-size:2.5em;"></i>
+                                        </span>
+                                        <span class="btn btn-outline-dark border-0" style="font-size:2.5em;">
+                                            <i class="fas fa-database"></i><span class="ml-2 pt-1"
+                                                style="font-size:0.5em;">MySQL</span>
+                                        </span>
+                                        <span class="btn btn-outline-dark border-0" style="font-size:2.5em;">
+                                            <i class="fas fa-database"></i> <span class="ml-2 pt-1"
+                                                style="font-size:0.5em;">ModngoDB</span>
+                                        </span>
+                                        <!-- <span class="btn btn-outline-dark border-0">
+                                            <i class="fab fa-java" style="font-size:2.5em;"></i>
+                                        </span>
+                                        <span class="btn btn-outline-dark border-0">
+                                            <i class="fab fa-gulp" style="font-size:2.5em;"></i>
+                                        </span>
+                                        <span class="btn btn-outline-dark border-0">
+                                            <i class="fab fa-grunt" style="font-size:2.5em;"></i>
+                                        </span> -->
+                                        <span class="btn btn-outline-dark border-0">
+                                            <i class="fab fa-npm" style="font-size:2.5em;"></i>
+                                        </span>
+                                    </div>
                                 </section>
-                                <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
-                                    <div class="subheading mb-3">Workflow</div>
+                                <section class="d-flex flex-column pb-5">
+                                    <h3 class="mb-5 text-info text-uppercase pl-3">Workflow </h3>
                                     <ul class="fa-ul mb-0">
-                                        <li>
-                                            <i class="fa-li fa fa-check"></i> Mobile-First, Responsive
-                                            Design
+                                        <li class="lead text-justify font-weight-normal">
+                                            <i class="fa-li fa fa-check"></i> Mobile-First, Responsive Design
                                         </li>
-                                        <li>
+                                        <li class="lead text-justify font-weight-normal">
+                                            <i class="fa-li fa fa-check"></i> Attractive, Iconic, Colorful UI/UX Design
+                                        </li>
+                                        <li class="lead text-justify font-weight-normal">
                                             <i class="fa-li fa fa-check"></i> Cross Browser Testing &amp;
                                             Debugging
                                         </li>
-                                        <li><i class="fa-li fa fa-check"></i> Cross Functional Teams</li>
-                                        <li>
+                                        <li class="lead text-justify font-weight-normal">
+                                            <i class="fa-li fa fa-check"></i> Cross Functional Teams
+                                        </li>
+                                        <li class="lead text-justify font-weight-normal">
                                             <i class="fa-li fa fa-check"></i> Agile Development &amp; Scrum
                                         </li>
                                     </ul>

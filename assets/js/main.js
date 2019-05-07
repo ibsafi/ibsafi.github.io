@@ -6,12 +6,12 @@ $(function () {
     var obj = {
         modalContent: {
             body: {
-                name: '<div class="form-row form-group"><div class="input-group-prepend"><span class="btn btn-secondary"><i class="fas fa-language"></i></span></div><div class="col"><div class="input-group"><input type="text" class="form-control" name="name" placeholder="Name"></div></div></div>',
-                email: '<div class="form-row form-group"><div class="input-group-prepend"><span class="btn btn-secondary"><i class="fas fa-envelope"></i></span></div><div class="col"><div class="input-group"><input type="email" class="form-control" name="email" placeholder="Email"></div></div></div>',
+                name: '<div class="form-row form-group"><div class="input-group-prepend"><span class="btn btn-info"><i class="fas fa-language"></i></span></div><div class="col"><div class="input-group"><input type="text" class="form-control" name="name" placeholder="Name"></div></div></div>',
+                email: '<div class="form-row form-group"><div class="input-group-prepend"><span class="btn btn-warning"><i class="fas fa-envelope"></i></span></div><div class="col"><div class="input-group"><input type="email" class="form-control" name="email" placeholder="Email"></div></div></div>',
                 phone: '<div class="form-row form-group"><div class="input-group-prepend"><span class="btn btn-info"><i class="fas fa-phone"></i></span></div><div class="col"><div class="input-group"><input type="text" class="form-control" name="phone" placeholder="Phone"></div></div></div>',
-                description: '<div class="form-row form-group"><div class="input-group-prepend"><span class="btn btn-secondary"><i class="fas fa-info"></i></span></div><div class="col"><div class="input-group"><textarea class="form-control mh-2" name="description" placeholder="Description" rows="2"></textarea></div></div></div>',
-                company: '<div class="form-row form-group"><div class="input-group-prepend"><span class="btn btn-secondary"><i class="fas fa-building"></i></span></div><div class="col"><div class="input-group"><input type="text" class="form-control" name="company" placeholder="Company Name"></div></div></div>',
-                progress: '<div class="progress mx-4 mb-2"><div class="progress-bar progress-bar-striped progress-bar-animated"></div></div><span class="text-dark progress-state"></span>',
+                company: '<div class="form-row form-group"><div class="input-group-prepend"><span class="btn btn-dark"><i class="fas fa-building"></i></span></div><div class="col"><div class="input-group"><input type="text" class="form-control" name="company" placeholder="Company Name"></div></div></div>',
+                progress: '<div class="progress mx-4 mb-2"><div class="progress-bar bg-warning w-100 progress-bar-striped progress-bar-animated"></div></div><span class="text-dark progress-state"></span>',
+                description: '<div class="form-row form-group"><div class="input-group-prepend"><span class="btn btn-secondary"><i class="fas fa-info"></i></span></div><div class="col"><div class="input-group"><textarea class="form-control mh-2" name="description" placeholder="Message Description" rows="2"></textarea></div></div></div>',
             },
             footer: {
                 dismiss: '<button type="submit" class="btn btn-sm btn-secondary dismiss-modal"><i class="fas fa-times"></i> Dismiss</button>',
@@ -56,7 +56,7 @@ $(function () {
         },
         contact: {
             keys: {
-                modal: ["name", "email", "phone", "company", "description"],
+                modal: ["name", "phone", "email", "company", "description"],
                 lock: {
                     modal: [],
                 },
@@ -64,7 +64,7 @@ $(function () {
             html: {
                 header: '<button class="btn btn-outline-light"><i class="fas fa-comments"></i> Contact</button>',
                 body: {
-                    modal: ["name", "email", "phone", "company", "description"],
+                    modal: ["name", "phone", "email", "company", "description"],
                 },
                 footer: {
                     modal: ["cancel", "apply"],
@@ -189,6 +189,7 @@ $(function () {
             body += obj.modalContent.body[key];
         }
         body += obj.modalContent.body.progress;
+        body += `<p class="lead text-uppercase bg-warning font-weight-bold border p-2 mt-3"><i class="fas fa-info-circle"></i> Attention: This is a demo! Please use your E-Mail</p>`;
 
         var footer = "";
         for (var id in obj[data_type].html.footer[cmd]) {
