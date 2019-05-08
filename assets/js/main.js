@@ -227,8 +227,8 @@ $(function () {
 
     function updateDashboard() {
         //setting up the width of the modal's fields
-        $("span.btn").addClass("d-flex").css("min-width", "2.75em");
-        $("span.btn i").addClass("m-auto");
+        $("span.btn, i.btn").addClass("d-flex");
+        $("span.btn i, a.btn i").addClass("m-auto");
         $("textarea").css("min-height", "3em");
         $(".modal-footer span.btn i").removeClass("m-auto").addClass("my-auto mr-1");
     }

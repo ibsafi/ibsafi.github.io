@@ -44,6 +44,7 @@ a:hover, a:focus {
 
 .img-profile{
 border: 0.2rem solid rgba(187, 177, 86, 0.5);
+width: 80%;
 }
 
 .noselect {
