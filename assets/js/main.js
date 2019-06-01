@@ -251,12 +251,19 @@ $(function () {
             hideModal();
         }
     });
+    $(document).on("click", ".onclick", function () {
+        let id = parseInt($(".carousel .active").data("id"));
+        ($(this).data("slide") === "next") ? id++ : id--
+        if (id === 0) id = 11;
+        if (id === 12) id = 1;
+        $("#project_id").text(id);
+    })
     $(document).on("click", ".input-group-prepend .btn", function () {
         $(this).closest(".form-row").find(".form-control").first().focus();
     });
+
     $(window).resize(navbar_resize);
 
     navbar_resize();
     updateDashboard();
-
 });
