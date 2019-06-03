@@ -243,7 +243,27 @@ $(function () {
             $(".update-height").attr("style", "max-height:" + ($(window).height() - $(".auto-height").height() - 16.5) + "px;");
         }
     }
+    let stopTracking = false;
+    let set_id = setTimeout(() => { stopTracking = false }, 100)
 
+    function updateCarousel(data) {
+        let id = parseInt($(".carousel .active").data("id"));
+        if (data !== false) {
+            stopTracking = true;
+            clearTimeout(set_id);
+            set_id = setTimeout(() => { stopTracking = false }, 650)
+
+            if (data === "next") { id += 1 } else { id -= 1 }
+            if (id === 0) id = 11;
+            if (id === 12) id = 1;
+            $("#project_id").text(id);
+
+        } else {
+            if (stopTracking === false) {
+                $("#project_id").text(id);
+            }
+        }
+    }
     $(document).on("click", ".cmd", handle_click);
     $(document).on("click", '.modal:not(.show), .dismiss-modal', hideModal);
     $(document).keyup(function (event) {
@@ -251,13 +271,9 @@ $(function () {
             hideModal();
         }
     });
-    $(document).on("click", ".onclick", function () {
-        let id = parseInt($(".carousel .active").data("id"));
-        ($(this).data("slide") === "next") ? id++ : id--
-        if (id === 0) id = 11;
-        if (id === 12) id = 1;
-        $("#project_id").text(id);
-    })
+    $(document).on("click", ".carousel-control-prev", () => { updateCarousel("prev") })
+    $(document).on("click", ".carousel-control-next", () => { updateCarousel("next") })
+    setInterval(() => { updateCarousel(false) }, 1500);
     $(document).on("click", ".input-group-prepend .btn", function () {
         $(this).closest(".form-row").find(".form-control").first().focus();
     });
